@@ -22,7 +22,7 @@ class HelloServiceHandler:
 
 handler = HelloServiceHandler()
 processor = HelloWorldService.Processor(handler)  # 定义一个TProcess处理类，创建TProcess对象
-transport = TSocket.TServerSocket("localhost", 9090)  # 设置网络读写
+transport = TSocket.TServerSocket("localhost", 8800)  # 设置网络读写
 tfactory = TTransport.TBufferedTransportFactory()
 pfactory = TBinaryProtocol.TBinaryProtocolFactory()
 
